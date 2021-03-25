@@ -34,7 +34,10 @@ ul {
 .button {
   background: var(--main-color);
   color: var(--white);
-  padding: 23px 41px;
+  padding: 0;
+  min-width: 225px;
+  height: 65px;
+  line-height: 65px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -56,7 +59,7 @@ ul {
 }
 
 .text {
-  width: 540px;
+  max-width: 540px;
   margin: 0 auto;
   color: var(--text-color);
   font-style: normal;
@@ -100,6 +103,7 @@ ul {
 .main-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .main-inner {
   width: 540px;
@@ -132,10 +136,12 @@ ul {
 .projects-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .projects-item {
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
 }
 .projects-image {
   margin-right: 20px;
@@ -166,8 +172,10 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}.skills-inner {
-  width: 445px;
+  flex-wrap: wrap;
+}
+.skills-inner {
+  max-width: 445px;
 }
 .skills-title {
   text-align: left;
@@ -187,12 +195,15 @@ ul {
   margin-bottom: 25px;
 }
 .skills-bar {
-  width: 350px;
+  width: 75%;
   height: 4px;
   background-color:  var(--main-color);
 }
 .skills-fotography {
-  width: 555px;
+  max-width: 555px;
+}
+.skills-fotography img{
+  width: 100%;
 }
 
 
@@ -256,6 +267,80 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+
+/*  CONTACTS  */
+.contacts {
+  background-color: var(--bg-color);
+  padding: 100px 0;
+}
+.contacts-text {
+  margin-bottom: 65px;
+}
+.form {
+  max-width: 540px;
+  margin: 0 auto;
+  text-align: center;
+}
+.form-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.form-inner > input {
+  min-width: 255px;
+  height: 50px;
+  margin-bottom: 20px;
+  line-height: 50px;
+  padding: 0 20px;
+  font-size: 14px;
+}
+.form-textarea {
+  width: 100%;
+  height: 175px;
+  margin-bottom: 50px;
+  resize: none;
+  padding: 17px 20px;
+  font-size: 14px;
+}
+.form-button {
+  font-size: 14px;
+  min-width: 190px;
+  height: 55px;
+  line-height: 55px;
+}
+
+
+/*  FOOTER  */
+.footer {
+  background-color: var(--main-color);
+  color: var(--white);
+  padding: 50px 0;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.autor-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.autor-copy {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 21px;
+}
+.social {
+  display: flex;
+}
+.social-item {
+  margin-left: 20px;
 }
 
 
