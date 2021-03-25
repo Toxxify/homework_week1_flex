@@ -48,6 +48,10 @@ ul {
   cursor: pointer;
   margin-bottom: 20px;
 }
+.button:hover {
+  transition: all .3s;    
+  background-color: #254974;
+}
 
 .section-title {
   color: var(--balck);
@@ -95,7 +99,12 @@ ul {
   letter-spacing: 0.1em;
   color: var(--balck);
   margin-left: 39px;
+  font-weight: 500;
   text-transform: uppercase;
+}
+.navigation-item a:hover {
+  transition: all .2s;
+  color: var(--main-color);
 }
 
 
@@ -348,6 +357,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .autor-name {
   font-style: normal;
@@ -368,3 +378,53 @@ ul {
 .social-item {
   margin-left: 20px;
 }
+
+
+
+@media (max-width: 1140px) {
+  .main-wrapper {
+    display: block;
+    text-align: center;
+  }
+  .main-inner {
+    margin: 0 auto;
+  }
+  .main-text {
+    text-align: center;
+  }
+  .projects-wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .projects-item {
+    width: 30%;
+    align-items: center;
+  }
+  .skills-wrapper {
+    display: block;
+  }
+  .skills-inner,
+  .skills-fotography {
+    margin: 0 auto;
+  }
+  .skills-inner {
+    margin-bottom: 60px;
+  }
+  .company-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:992px) {}
+
+@media (max-width:768px) {
+  .form-inner {
+    display: block;
+  }
+  .form-inner > input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {}
