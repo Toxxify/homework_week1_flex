@@ -20,12 +20,16 @@
         </a>
 
         <nav class="navigation">
+          <input class="navigation-check" type="checkbox" id="navigation-check">
+          <label class="navigation-label" for="navigation-check">
+            <div class="navigation-burger">&#9776;</div>
+          </label>
           <ul class="navigation-list">
             <li class="navigation-item"><a href="#main">главная</a></li>
             <li class="navigation-item"><a href="#about">об авторе</a></li>
-            <li class="navigation-item"><a href="#work">работы</a></li>
-            <li class="navigation-item"><a href="#">процесс</a></li>
-            <li class="navigation-item"><a href="#">контакты</a></li>
+            <li class="navigation-item"><a href="#projects">работы</a></li>
+            <li class="navigation-item"><a href="#work">процесс</a></li>
+            <li class="navigation-item"><a href="#contacts">контакты</a></li>
           </ul>
         </nav>
 
@@ -38,7 +42,9 @@
     <div class="container">
       <div class="main-wrapper">
 
-        <img src="img/code.svg" alt="Картинка ноутбука" class="main-image">
+        <div class="main-image">
+          <img src="img/code.svg" alt="Картинка ноутбука">
+        </div>
 
         <div class="main-inner">
           <h1 class="main-title">Дизайн и верстка</h1>
@@ -57,49 +63,61 @@
       <p class="about-text text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="projects">
       <div class="container">
         <div class="projects-wrapper">
 
           <div class="projects-item">
-            <img src="img/project.svg" alt="Картинка проекта" class="projects-image">
-            <div class="projects-description">
-              <div class="projects-name"><span>40+</span>проектов</div>
+            <div class="project-inner">
+              <img src="img/project.svg" alt="Картинка проекта" class="projects-image">
+              <div class="projects-description">
+                <div class="projects-name"><span>40+</span>проектов</div>
+              </div>
             </div>
           </div>
 
           <div class="projects-item">
-            <img src="img/project.svg" alt="Картинка проекта" class="projects-image">
-            <div class="projects-description">
-              <div class="projects-name"><span>40+</span>проектов</div>
+            <div class="project-inner">
+              <img src="img/project.svg" alt="Картинка проекта" class="projects-image">
+              <div class="projects-description">
+                <div class="projects-name"><span>40+</span>проектов</div>
+              </div>
             </div>
           </div>
 
           <div class="projects-item">
-            <img src="img/project.svg" alt="Картинка проекта" class="projects-image">
-            <div class="projects-description">
-              <div class="projects-name"><span>40+</span>проектов</div>
+            <div class="project-inner">
+              <img src="img/project.svg" alt="Картинка проекта" class="projects-image">
+              <div class="projects-description">
+                <div class="projects-name"><span>40+</span>проектов</div>
+              </div>
             </div>
           </div>
 
           <div class="projects-item">
-            <img src="img/project.svg" alt="Картинка проекта" class="projects-image">
-            <div class="projects-description">
-              <div class="projects-name"><span>40+</span>проектов</div>
+            <div class="project-inner">
+              <img src="img/project.svg" alt="Картинка проекта" class="projects-image">
+              <div class="projects-description">
+                <div class="projects-name"><span>40+</span>проектов</div>
+              </div>
             </div>
           </div>
 
           <div class="projects-item">
-            <img src="img/project.svg" alt="Картинка проекта" class="projects-image">
-            <div class="projects-description">
-              <div class="projects-name"><span>40+</span>проектов</div>
+            <div class="project-inner">
+              <img src="img/project.svg" alt="Картинка проекта" class="projects-image">
+              <div class="projects-description">
+                <div class="projects-name"><span>40+</span>проектов</div>
+              </div>
             </div>
           </div>
 
           <div class="projects-item">
-            <img src="img/project.svg" alt="Картинка проекта" class="projects-image">
-            <div class="projects-description">
-              <div class="projects-name"><span>40+</span>проектов</div>
+            <div class="project-inner">
+              <img src="img/project.svg" alt="Картинка проекта" class="projects-image">
+              <div class="projects-description">
+                <div class="projects-name"><span>40+</span>проектов</div>
+              </div>
             </div>
           </div>
 
@@ -137,12 +155,13 @@
                 <div class="skills-bar"></div>
               </div>
             </li>
+
           </ul>
         </div>
+
         <div class="skills-fotography">
           <img src="img/man.jpg" alt="Моя фотография">
         </div>
-
       </div>
     </div>
   </section>
@@ -211,16 +230,24 @@
   <section class="company">
     <div class="container">
       <div class="company-wrapper">
-        <img src="img/microsoft-logo.svg" alt="Логотип компании" class="company-logo">
-        <img src="img/microsoft-logo.svg" alt="Логотип компании" class="company-logo">
-        <img src="img/microsoft-logo.svg" alt="Логотип компании" class="company-logo">
-        <img src="img/microsoft-logo.svg" alt="Логотип компании" class="company-logo">
+        <div class="company-logo">
+          <img src="img/microsoft-logo.svg" alt="Логотип компании">
+        </div>
+        <div class="company-logo">
+          <img src="img/microsoft-logo.svg" alt="Логотип компании">
+        </div>
+        <div class="company-logo">
+          <img src="img/microsoft-logo.svg" alt="Логотип компании">
+        </div>
+        <div class="company-logo">
+          <img src="img/microsoft-logo.svg" alt="Логотип компании">
+        </div>
       </div>
     </div>
   </section>
 
 
-  <section class="contacts">
+  <section class="contacts" id="contacts">
     <div class="container">
       <h2 class="contacts-title section-title">Хотите веб-сайт?</h2>
       <p class="contacts-text text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
